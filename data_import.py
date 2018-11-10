@@ -6,7 +6,7 @@ from matplotlib.font_manager import FontProperties
 from matplotlib import font_manager as fm, rcParams
 import glob
 
-USE_STORED = True
+USE_STORED = not True
 
 arankcodes = pd.read_csv("arankcodes.csv")
 racecodes = pd.read_csv("racecodes.csv")
@@ -15,7 +15,10 @@ unidict = dict(zip(carnegie['unitid'], carnegie['name']))
 ratingdict = dict(zip(carnegie['unitid'], carnegie['rating']))
 racedict = dict(zip(racecodes['code'], racecodes['race'])) 
 
-COLUMNS = ["YEAR", "UNITID", "ARANK"] + list(racecodes["code"])
+urmlist = "black grand".split(" ") #urmlist = "black indian hispanic grand".split(" ")
+urmcheck = lambda x : any( u in x for u in urmlist)
+urmcodes = [c for (c,r) in zip(racecodes['code'], racecodes['race']) if urmcheck(r.lower())]
+COLUMNS = ["YEAR", "UNITID", "ARANK"] + urmcodes # list(racecodes["code"])
 other =    "Other Faculty"
 associate =  "Associate Professor"
 assistant = "Assistant Professor"
@@ -94,7 +97,7 @@ def readAllData():
         df['YEAR'] = [year]*dlen
         csv_dataframes.append( df[COLUMNS])
         print "successfully loaded %s" % f
-        if i > 2: break
+        #if i > 0: break
     if len(csv_dataframes) == 0:
         print "No csv files loaded"
         return None
@@ -119,5 +122,6 @@ def getDataFrame():
     return dataframe
 
 df = getDataFrame()
-df = dfToEnglish(df)
+eng_df = dfToEnglish(df)
+eng_df.to_csv("blackcomp.csv")
 
