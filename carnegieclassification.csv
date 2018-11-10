@@ -1,0 +1,335 @@
+unitid,name,rating
+100663,University of Alabama at Birmingham,R1
+100706,University of Alabama in Huntsville,R2
+100751,The University of Alabama,R2
+100858,Auburn University,R2
+102094,University of South Alabama,R2
+102614,University of Alaska Fairbanks,R2
+104151,Arizona State University-Tempe,R1
+104179,University of Arizona,R1
+104717,Grand Canyon University,R3
+105330,Northern Arizona University,R2
+106245,University of Arkansas at Little Rock,R3
+106397,University of Arkansas,R1
+109785,Azusa Pacific University,R3
+110097,Biola University,R3
+110316,California Institute of Integral Studies,R3
+110404,California Institute of Technology,R1
+110468,Alliant International University-San Diego,R3
+110556,California State University-Fresno,R3
+110565,California State University-Fullerton,R3
+110635,University of California-Berkeley,R1
+110644,University of California-Davis,R1
+110653,University of California-Irvine,R1
+110662,University of California-Los Angeles,R1
+110671,University of California-Riverside,R1
+110680,University of California-San Diego,R1
+110705,University of California-Santa Barbara,R1
+110714,University of California-Santa Cruz,R1
+112251,Claremont Graduate University,R2
+114549,Fielding Graduate University,R3
+117140,University of La Verne,R3
+119678,Naval Postgraduate School,R2
+120883,University of the Pacific,R3
+121150,Pepperdine University,R3
+122409,San Diego State University,R2
+122436,University of San Diego,R3
+122597,San Francisco State University,R3
+122612,University of San Francisco,R3
+123961,University of Southern California,R1
+125231,Walden University,R3
+126562,University of Colorado Denver/Anschutz Medical Campus,R2
+126614,University of Colorado Boulder,R1
+126775,Colorado School of Mines,R2
+126818,Colorado State University-Fort Collins,R1
+127060,University of Denver,R2
+127741,University of Northern Colorado,R2
+129020,University of Connecticut,R1
+129525,University of Hartford,R3
+130794,Yale University,R1
+130943,University of Delaware,R1
+131113,Wilmington University,R3
+131159,American University,R2
+131283,Catholic University of America,R2
+131469,George Washington University,R1
+131496,Georgetown University,R1
+131520,Howard University,R2
+132471,Barry University,R3
+132903,University of Central Florida,R1
+133650,Florida Agricultural and Mechanical University,R2
+133669,Florida Atlantic University,R2
+133881,Florida Institute of Technology,R2
+133951,Florida International University,R1
+134097,Florida State University,R1
+134130,University of Florida,R1
+135726,University of Miami,R1
+136215,Nova Southeastern University,R2
+137148,Argosy University-Sarasota,R3
+137351,University of South Florida-Main Campus,R1
+138354,The University of West Florida,R3
+138947,Clark Atlanta University,R2
+139658,Emory University,R1
+139755,Georgia Institute of Technology-Main Campus,R1
+139931,Georgia Southern University,R3
+139940,Georgia State University,R1
+139959,University of Georgia,R1
+140447,Mercer University,R3
+141264,Valdosta State University,R3
+141334,University of West Georgia,R3
+141574,University of Hawaii at Manoa,R1
+142115,Boise State University,R3
+142276,Idaho State University,R3
+142285,University of Idaho,R2
+144050,University of Chicago,R1
+144740,DePaul University,R3
+145600,University of Illinois at Chicago,R1
+145619,Benedictine University,R3
+145637,University of Illinois at Urbana-Champaign,R1
+145725,Illinois Institute of Technology,R2
+145770,Argosy University-Chicago,R3
+145813,Illinois State University,R2
+146719,Loyola University Chicago,R2
+147536,National Louis University,R3
+147703,Northern Illinois University,R2
+147767,Northwestern University,R1
+149222,Southern Illinois University-Carbondale,R2
+149514,Trinity International University-Illinois,R3
+150136,Ball State University,R2
+151111,Indiana University-Purdue University-Indianapolis,R2
+151324,Indiana State University,R3
+151351,Indiana University-Bloomington,R1
+152080,University of Notre Dame,R1
+153603,Iowa State University,R1
+153658,University of Iowa,R1
+155317,University of Kansas,R1
+155399,Kansas State University,R1
+156125,Wichita State University,R2
+156541,University of the Cumberlands,R3
+157085,University of Kentucky,R1
+157289,University of Louisville,R1
+157757,Spalding University,R3
+159391,Louisiana State University and Agricultural & Mechanical College,R1
+159647,Louisiana Tech University,R3
+159939,University of New Orleans,R2
+159993,University of Louisiana at Monroe,R3
+160658,University of Louisiana at Lafayette,R2
+160755,Tulane University of Louisiana,R1
+161253,University of Maine,R2
+162928,Johns Hopkins University,R1
+163268,University of Maryland-Baltimore County,R2
+163286,University of Maryland-College Park,R1
+163338,University of Maryland Eastern Shore,R3
+163453,Morgan State University,R3
+164447,American International College,R3
+164924,Boston College,R1
+164988,Boston University,R1
+165015,Brandeis University,R1
+165334,Clark University,R3
+166027,Harvard University,R1
+166452,Lesley University,R3
+166513,University of Massachusetts-Lowell,R2
+166629,University of Massachusetts-Amherst,R1
+166638,University of Massachusetts-Boston,R2
+166683,Massachusetts Institute of Technology,R1
+167358,Northeastern University,R1
+167987,University of Massachusetts-Dartmouth,R2
+168005,Suffolk University,R3
+168148,Tufts University,R1
+168421,Worcester Polytechnic Institute,R2
+168740,Andrews University,R3
+169248,Central Michigan University,R2
+169798,Eastern Michigan University,R3
+170976,University of Michigan-Ann Arbor,R1
+171100,Michigan State University,R1
+171128,Michigan Technological University,R2
+171571,Oakland University,R3
+172644,Wayne State University,R1
+172699,Western Michigan University,R2
+174066,University of Minnesota-Twin Cities,R1
+174914,University of St Thomas,R3
+175856,Jackson State University,R2
+176017,University of Mississippi,R1
+176080,Mississippi State University,R2
+176372,University of Southern Mississippi,R2
+177968,Lindenwood University,R3
+178059,Maryville University of Saint Louis,R3
+178396,University of Missouri-Columbia,R1
+178402,University of Missouri-Kansas City,R2
+178411,Missouri University of Science and Technology,R2
+178420,University of Missouri-St Louis,R2
+179159,Saint Louis University,R2
+179867,Washington University in St Louis,R1
+180461,Montana State University,R2
+180489,The University of Montana,R2
+181394,University of Nebraska at Omaha,R3
+181464,University of Nebraska-Lincoln,R1
+182281,University of Nevada-Las Vegas,R2
+182290,University of Nevada-Reno,R2
+182670,Dartmouth College,R2
+183044,University of New Hampshire-Main Campus,R2
+184782,Rowan University,R3
+185590,Montclair State University,R3
+185828,New Jersey Institute of Technology,R2
+186131,Princeton University,R1
+186380,Rutgers University-New Brunswick,R1
+186399,Rutgers University-Newark,R2
+186584,Seton Hall University,R3
+186867,Stevens Institute of Technology,R2
+187985,University of New Mexico-Main Campus,R1
+188030,New Mexico State University-Main Campus,R2
+188429,Adelphi University,R3
+190044,Clarkson University,R3
+190150,Columbia University in the City of New York,R1
+190415,Cornell University,R1
+190576,CUNY Graduate School and University Center,R1
+191241,Fordham University,R2
+191649,Hofstra University,R3
+193654,The New School,R2
+193900,New York University,R1
+194310,Pace University-New York,R3
+194824,Rensselaer Polytechnic Institute,R2
+195003,Rochester Institute of Technology,R3
+195030,University of Rochester,R1
+195049,Rockefeller University,R2
+195720,Saint John Fisher College,R3
+195809,St John's University-New York,R3
+196060,SUNY at Albany,R1
+196079,Binghamton University,R2
+196088,University at Buffalo,R1
+196097,Stony Brook University,R1
+196103,SUNY College of Environmental Science and Forestry,R3
+196413,Syracuse University,R1
+196468,Teachers College at Columbia University,R2
+197708,Yeshiva University,R2
+198419,Duke University,R1
+198464,East Carolina University,R2
+198561,Gardner-Webb University,R3
+199102,North Carolina A & T State University,R2
+199120,University of North Carolina at Chapel Hill,R1
+199139,University of North Carolina at Charlotte,R2
+199148,University of North Carolina at Greensboro,R2
+199193,North Carolina State University at Raleigh,R1
+199847,Wake Forest University,R2
+200280,University of North Dakota,R2
+200332,North Dakota State University-Main Campus,R2
+200697,Air Force Institute of Technology-Graduate School of Engineering & Management,R3
+200800,University of Akron Main Campus,R2
+201104,Ashland University,R3
+201441,Bowling Green State University-Main Campus,R2
+201645,Case Western Reserve University,R1
+201885,University of Cincinnati-Main Campus,R1
+202134,Cleveland State University,R2
+202480,University of Dayton,R2
+203517,Kent State University at Kent,R2
+204024,Miami University-Oxford,R2
+204796,Ohio State University-Main Campus,R1
+204857,Ohio University-Main Campus,R2
+206084,University of Toledo,R2
+206279,Union Institute & University,R3
+206604,Wright State University-Main Campus,R3
+207388,Oklahoma State University-Main Campus,R2
+207500,University of Oklahoma-Norman Campus,R1
+207971,University of Tulsa,R2
+209542,Oregon State University,R1
+209551,University of Oregon,R1
+209807,Portland State University,R2
+211440,Carnegie Mellon University,R1
+212054,Drexel University,R2
+212106,Duquesne University,R2
+213011,Immaculata University,R3
+213020,Indiana University of Pennsylvania-Main Campus,R3
+213543,Lehigh University,R2
+214777,Pennsylvania State University-Main Campus,R1
+215062,University of Pennsylvania,R1
+215293,University of Pittsburgh-Pittsburgh Campus,R1
+215655,Robert Morris University,R3
+216339,Temple University,R1
+216597,Villanova University,R3
+216852,Widener University,R3
+217156,Brown University,R1
+217484,University of Rhode Island,R2
+217882,Clemson University,R1
+218663,University of South Carolina-Columbia,R1
+219356,South Dakota State University,R2
+219471,University of South Dakota,R2
+219976,Lipscomb University,R3
+220075,East Tennessee State University,R3
+220862,University of Memphis,R2
+220978,Middle Tennessee State University,R3
+221759,The University of Tennessee-Knoxville,R1
+221838,Tennessee State University,R3
+221847,Tennessee Technological University,R3
+221892,Trevecca Nazarene University,R3
+221971,Union University,R3
+221999,Vanderbilt University,R1
+223232,Baylor University,R2
+224147,Texas A & M University-Corpus Christi,R3
+224226,Dallas Baptist University,R3
+224554,Texas A & M University-Commerce,R2
+225511,University of Houston,R1
+226091,Lamar University,R3
+227216,University of North Texas,R1
+227368,The University of Texas Rio Grande Valley,R3
+227526,Prairie View A & M University,R3
+227757,Rice University,R1
+227881,Sam Houston State University,R3
+228246,Southern Methodist University,R2
+228459,Texas State University,R2
+228705,Texas A & M University-Kingsville,R3
+228723,Texas A & M University-College Station,R1
+228769,The University of Texas at Arlington,R1
+228778,The University of Texas at Austin,R1
+228787,The University of Texas at Dallas,R1
+228796,The University of Texas at El Paso,R2
+228875,Texas Christian University,R2
+229027,The University of Texas at San Antonio,R2
+229063,Texas Southern University,R3
+229115,Texas Tech University,R1
+229179,Texas Woman's University,R3
+230038,Brigham Young University-Provo,R2
+230728,Utah State University,R2
+230764,University of Utah,R1
+231174,University of Vermont,R2
+231624,College of William and Mary,R2
+231651,Regent University,R3
+232186,George Mason University,R1
+232557,Liberty University,R3
+232982,Old Dominion University,R2
+233541,Shenandoah University,R3
+233921,Virginia Polytechnic Institute and State University,R1
+234030,Virginia Commonwealth University,R1
+234076,University of Virginia-Main Campus,R1
+236577,Seattle Pacific University,R3
+236939,Washington State University,R1
+236948,University of Washington-Seattle Campus,R1
+238032,West Virginia University,R1
+238430,Cardinal Stritch University,R3
+238661,Edgewood College,R3
+239105,Marquette University,R2
+240444,University of Wisconsin-Madison,R1
+240453,University of Wisconsin-Milwaukee,R1
+240727,University of Wyoming,R2
+241410,Pontifical Catholic University of Puerto Rico-Ponce,R3
+242653,Inter American University of Puerto Rico-Metro,R3
+243221,University of Puerto Rico-Rio Piedras,R2
+243601,Universidad Del Turabo,R3
+243744,Stanford University,R1
+243780,Purdue University-Main Campus,R1
+365426,Mayo Clinic Graduate School of Biomedical Sciences,R3
+367936,Argosy University-Atlanta,R3
+413413,Capella University,R3
+428268,Argosy University-Tampa,R3
+436438,Argosy University-Orange County,R3
+437097,University of Management and Technology,R3
+444130,Northcentral University,R3
+445188,University of California-Merced,R2
+448734,Argosy University-Denver,R3
+448886,Arizona State University-Downtown Phoenix,R3
+450526,Argosy University-Inland Empire,R3
+450979,Trident University International,R3
+454829,Aspen University,R3
+456348,Argosy University-Phoenix Online Division,R3
+482149,Augusta University,R2
+483124,Arizona State University-Skysong,R3
+484613,University of Phoenix-Arizona,R3
+486840,Kennesaw State University,R3

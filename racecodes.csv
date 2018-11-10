@@ -1,0 +1,70 @@
+code,race
+HR2MORM,Two or more races men 
+HR2MORT,Two or more races total 
+HR2MORW,Two or more races women  
+HRAIANM,American Indian or Alaska Native men 
+HRAIANT,American Indian or Alaska Native total 
+HRAIANW,American Indian or Alaska Native women
+HRASIAM,Asian men 
+HRASIAT,Asian total 
+HRASIAW,Asian women 
+HRBKAAM,Black or African American men 
+HRBKAAT,Black or African American total 
+HRBKAAW,Black or African American women 
+HRHISPM,Hispanic or Latino men 
+HRHISPT,Hispanic or Latino total 
+HRHISPW,Hispanic or Latino women 
+HRNHPIM,Native Hawaiian or Other Pacific Islander men 
+HRNHPIT,Native Hawaiian or Other Pacific Islander total 
+HRNHPIW,Native Hawaiian or Other Pacific Islander women 
+HRNRALM,Nonresident alien men
+HRNRALT,Nonresident alien total
+HRNRALW,Nonresident alien women
+HRTOTLM,Grand total men
+HRTOTLT,Grand total
+HRTOTLW,Grand total women
+HRUNKNM,Race/ethnicity unknown men
+HRUNKNT,Race/ethnicity unknown total
+HRUNKNW,Race/ethnicity unknown women
+HRWHITM,White men 
+HRWHITT,White total
+HRWHITW,White women 
+STAFF01,Nonresident alien men
+STAFF02,Nonresident alien women
+STAFF03,Black non-Hispanic men
+STAFF04,Black non-Hispanic women
+STAFF05,American Indian or Alaska Native men
+STAFF06,American Indian or Alaska Native women
+STAFF07,Asian or Pacific Islander men
+STAFF08,Asian or Pacific Islander women
+STAFF09,Hispanic men
+STAFF10,Hispanic women
+STAFF11,White non-Hispanic men
+STAFF12,White non-Hispanic women
+STAFF13,Race/ethnicity unknown men
+STAFF14,Race/ethnicity unknown women
+STAFF15,Grand total men
+STAFF16,Grand total women
+STAFF17,Nonresident alien total
+STAFF18,Black non-Hispanic  total
+STAFF19,American Indian or Alaska Native total
+STAFF20,Asian or Pacific Islander total
+STAFF21,Hispanic total
+STAFF22,White non-Hispanic total
+STAFF23,Race/ethnicity unknown total
+STAFF24,Grand total
+DVHRAIM,American Indian or Alaska Native men - derived
+DVHRAIT,American Indian or Alaska Native total - derived
+DVHRAIW,American Indian or Alaska Native women - derived
+DVHRAPM,Asian/Native Hawaiian/Other Pacific Islander men - derived
+DVHRAPT,Asian/Native Hawaiian/Other Pacific Islander total - derived
+DVHRAPW,Asian/Native Hawaiian/Other Pacific Islander women - derived
+DVHRBKM,Black or African American/Black non-Hispanic men - derived
+DVHRBKT,Black or African American/Black non-Hispanic total - derived
+DVHRBKW,Black or African American/Black non-Hispanic women - derived
+DVHRHSM,Hispanic or Latino/Hispanic men - derived
+DVHRHST,Hispanic or Latino/Hispanic total - derived
+DVHRHSW,Hispanic or Latino/Hispanic women - derived
+DVHRWHM,White/White non-Hispanic men - derived
+DVHRWHT,White/White non-Hispanic total - derived
+DVHRWHW,White/White non-Hispanic women - derived
