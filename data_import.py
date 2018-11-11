@@ -13,7 +13,8 @@ racecodes = pd.read_csv("racecodes.csv")
 carnegie = pd.read_csv("carnegieclassification.csv")
 unidict = dict(zip(carnegie['unitid'], carnegie['name']))
 ratingdict = dict(zip(carnegie['unitid'], carnegie['rating']))
-racedict = dict(zip(racecodes['code'], racecodes['race'])) 
+racedict = dict(zip(racecodes['code'], racecodes['combined_race'])) 
+#instdict = dict(zip(arankcodes['code'], racecodes['race'])) 
 
 urmlist = "black grand".split(" ") #urmlist = "black indian hispanic grand".split(" ")
 urmcheck = lambda x : any( u in x for u in urmlist)
@@ -68,8 +69,8 @@ def dfToEnglish(df):
     new_df['RANK'] = new_df.RANK.replace(ratingdict)
 
     yrdf = new_df[["YEAR", "ARANK"]] 
-    ranks = [getARANK(row) for idx,row in yrdf.iterrows()]
-    new_df["INSTRUCTOR"] = ranks
+    #ranks = [getARANK(row) for idx,row in yrdf.iterrows()]
+    #new_df["INSTRUCTOR"] = ranks
 
     return new_df
 
@@ -78,6 +79,7 @@ def dfToEnglish(df):
 def readAllData():
     csv_dataframes = []
     for i, f in enumerate(glob.glob("iped/*csv")):
+        if "rv" in f : continue # remove all revised stuff
         try:
             year = re.findall(r'\d+', f)
             assert len(year) == 1
@@ -97,7 +99,7 @@ def readAllData():
         df['YEAR'] = [year]*dlen
         csv_dataframes.append( df[COLUMNS])
         print "successfully loaded %s" % f
-        #if i > 0: break
+        if i > 0: break
     if len(csv_dataframes) == 0:
         print "No csv files loaded"
         return None
@@ -124,4 +126,7 @@ def getDataFrame():
 df = getDataFrame()
 eng_df = dfToEnglish(df)
 eng_df.to_csv("blackcomp.csv")
+gb =  eng_df.groupby("YEAR", as_index=False).count() 
+print eng_df.groupby("YEAR", as_index=False).count().columns
+print gb.melt(["YEAR", "RANK"])
 
