@@ -6,20 +6,27 @@ from matplotlib.font_manager import FontProperties
 from matplotlib import font_manager as fm, rcParams
 import glob
 
-USE_STORED = not True
+USE_STORED = True
 
 arankcodes = pd.read_csv("arankcodes.csv")
 racecodes = pd.read_csv("racecodes.csv")
 carnegie = pd.read_csv("carnegieclassification.csv")
-unidict = dict(zip(carnegie['unitid'], carnegie['name']))
-ratingdict = dict(zip(carnegie['unitid'], carnegie['rating']))
-racedict = dict(zip(racecodes['code'], racecodes['combined_race'])) 
-#instdict = dict(zip(arankcodes['code'], racecodes['race'])) 
 
-urmlist = "black grand".split(" ") #urmlist = "black indian hispanic grand".split(" ")
-urmcheck = lambda x : any( u in x for u in urmlist)
-urmcodes = [c for (c,r) in zip(racecodes['code'], racecodes['race']) if urmcheck(r.lower())]
-COLUMNS = ["YEAR", "UNITID", "ARANK"] + urmcodes # list(racecodes["code"])
+def create_dict(df, x, y):
+    return dict(zip(df[x], df[y]))
+
+unidict = create_dict(carnegie, 'unitid', 'name')
+ratingdict = create_dict(carnegie, 'unitid', 'rating')
+racedict = create_dict(racecodes, 'code', 'combined_race')
+
+#urmlist = "black grand".split(" ") #urmlist = "black indian hispanic grand".split(" ")
+#urmcheck = lambda x : any( u in x for u in urmlist)
+#urmcodes = [c for (c,r) in zip(racecodes['code'], racecodes['race']) if urmcheck(r.lower())]
+#racecolumns = urmcodes  
+racecolumns = list(racecodes['code'])
+
+COLUMNS = ["YEAR", "UNITID", "ARANK"] + racecolumns 
+
 other =    "Other Faculty"
 associate =  "Associate Professor"
 assistant = "Assistant Professor"
@@ -60,18 +67,33 @@ def getARANK((year, code)):
     else:
         return  other
 
+
+def arankToInstructor(df):
+    eng_df = df.copy()
+
+    combined_year_dicts = {}
+    for y in arankcodes['year'].unique():
+        combined_year_dicts[y] = create_dict(arankcodes[arankcodes['year'] == y], 'code', 'title')
+    year_dicts = {}
+    for key in combined_year_dicts:
+        for y in key.split():
+            year_dicts[y] = combined_year_dicts[key]
+    eng_df["INSTRUCTOR"] = [""]*len(eng_df)
+    for year in df.YEAR.unique():
+        if year in year_dicts:
+            instdict = year_dicts[year]
+            idx = eng_df["YEAR"] == year
+
+            eng_df.loc[idx, ["INSTRUCTOR"]] = eng_df[idx]["ARANK"].replace(instdict)
+
+        
+    return eng_df
+
 def dfToEnglish(df):
-    new_df = df[ df.UNITID.isin(unidict)]
-    new_df = new_df.rename(columns=racedict)
-    new_df['NAME'] = list(new_df.UNITID)
-    new_df['RANK'] = list(new_df.UNITID)
-    new_df['NAME'] = new_df.NAME.replace(unidict)
-    new_df['RANK'] = new_df.RANK.replace(ratingdict)
-
-    yrdf = new_df[["YEAR", "ARANK"]] 
-    #ranks = [getARANK(row) for idx,row in yrdf.iterrows()]
-    #new_df["INSTRUCTOR"] = ranks
-
+    new_df = df.copy() # df[df.UNITID.isin(unidict)].copy()
+    new_df['NAME'] = new_df.UNITID.replace(unidict)
+    new_df['RANK'] = new_df.UNITID.replace(ratingdict)
+    new_df = arankToInstructor(new_df)
     return new_df
 
 
@@ -99,7 +121,7 @@ def readAllData():
         df['YEAR'] = [year]*dlen
         csv_dataframes.append( df[COLUMNS])
         print "successfully loaded %s" % f
-        if i > 0: break
+        #if i > 0: break
     if len(csv_dataframes) == 0:
         print "No csv files loaded"
         return None
@@ -123,10 +145,15 @@ def getDataFrame():
         print "saved all data to %s " % alldataname
     return dataframe
 
-df = getDataFrame()
-eng_df = dfToEnglish(df)
-eng_df.to_csv("blackcomp.csv")
-gb =  eng_df.groupby("YEAR", as_index=False).count() 
-print eng_df.groupby("YEAR", as_index=False).count().columns
-print gb.melt(["YEAR", "RANK"])
+DF = getDataFrame()
+eng_df = dfToEnglish(DF)
+eng_df = eng_df.drop(columns=["ARANK", "UNITID"])
+new_columns  = ["YEAR", "NAME", "RANK", "INSTRUCTOR"] 
+eng_df = eng_df.melt(new_columns,var_name="race gender") 
+eng_df['race gender']  = eng_df['race gender'].replace(racedict)
 
+gb = eng_df.groupby(["YEAR","race gender"]).sum() 
+gb = gb.unstack("YEAR")
+
+eng_df.to_csv("full_data.csv")
+gb.to_csv("grouped_data.csv")

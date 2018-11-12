@@ -27,3 +27,26 @@ Datafiles downloaded from https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx on
     * s2016_is
     * s2017_is
 
+
+Relevant Data labels
+
+All files ending with _is (2017-2012)
+
+Academic Rank: A status designated by the institution according to the institution's policies. The IPEDS HR survey includes the ranks of Professor, Associate Professor, Assistant Professor, Instructor, and Lecturer.
+
+
+ARANK
+0	All ranks
+1	Professors
+2	Associate professors
+3	Assistant professors
+4	Instructors
+5	Lecturers
+6	No academic rank
+
+
+2011
+
+
+
+
